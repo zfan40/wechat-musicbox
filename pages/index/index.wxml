@@ -1,0 +1,13 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="product-info">
+    <view class="product-container">
+      <image bindtap="bindCreateMiniature" class="product-img" src="http://via.placeholder.com/350x350" ></image>
+      <text class="product-type">18 Miniature</text>
+    </view>
+    <view class="product-container">
+      <image bindtap="bindCreateNormal" class="product-img" src="http://via.placeholder.com/350x350" ></image>
+      <text class="product-type">18 Standard</text>
+    </view>
+  </view>
+</view>

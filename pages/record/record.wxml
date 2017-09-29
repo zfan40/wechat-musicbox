@@ -1,0 +1,29 @@
+<!--index.wxml-->
+<!-- inspiration from https://codepen.io/zastrow/pen/oDBki  -->
+
+<view class="container">
+  <view class="white c"></view>
+  <view class="black d-minor"></view>
+  <view class="white d"></view>
+  <view class="black e-minor"></view>
+  <view class="white e"></view>
+  <view class="white f"></view>
+  <view class="black f-sharp"></view>
+  <view class="white g"></view>
+  <view class="black a-minor"></view>
+  <view class="white a"></view>
+  <view class="black b-minor"></view>
+  <view class="white b"></view>
+  <view class="white c"></view>
+  <view class="black d-minor"></view>
+  <view class="white d"></view>
+  <view class="black e-minor"></view>
+  <view class="white e"></view>
+  <view class="white f"></view>
+  <view class="black f-sharp"></view>
+  <view class="white g"></view>
+  <view class="black a-minor"></view>
+  <view class="white a"></view>
+  <view class="black b-minor"></view>
+  <view class="white b"></view>
+</view>
