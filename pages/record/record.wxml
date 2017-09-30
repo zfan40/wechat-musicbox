@@ -1,7 +1,8 @@
 <!--index.wxml-->
 <!-- inspiration from https://codepen.io/zastrow/pen/oDBki  -->
-
+<progress percent="20" active color="pink" class="progressBar"></progress>
 <view class="container" bindtouchstart="touchStartHandler" bindtouchend="touchEndHandler">
+<block>
   <view class="white c {{activeNote.note1?'active-note':''}}" id="note1"></view>
   <view class="black d-minor {{activeNote.note2?'active-note':''}}" id="note2"></view>
   <view class="white d {{activeNote.note3?'active-note':''}}" id="note3"></view>
@@ -27,6 +28,8 @@
   <view class="black b-minor {{activeNote.note23?'active-note':''}}" id="note23"></view>
   <view class="white b {{activeNote.note24?'active-note':''}}" id="note24"></view>
 
+</block>
+  
   <block wx:for="{{pianoNotes}}">
      <audio id="piano{{index}}" src="{{item}}"></audio> 
     <!-- <audio id="piano{{index}}"></audio> -->

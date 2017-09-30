@@ -5,8 +5,13 @@
   flex-direction: column;
   align-items: flex-end;
   justify-content: space-between;
-  padding: 0 20rpx;
+  /* padding: 0 20rpx; */
+  padding-right:347rpx;
   box-sizing: border-box;
+}
+.progressBar {
+  position: fixed;
+  width:750rpx;
 }
 .white {
   width:400rpx;
