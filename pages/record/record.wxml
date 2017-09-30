@@ -1,29 +1,34 @@
 <!--index.wxml-->
 <!-- inspiration from https://codepen.io/zastrow/pen/oDBki  -->
 
-<view class="container">
-  <view class="white c"></view>
-  <view class="black d-minor"></view>
-  <view class="white d"></view>
-  <view class="black e-minor"></view>
-  <view class="white e"></view>
-  <view class="white f"></view>
-  <view class="black f-sharp"></view>
-  <view class="white g"></view>
-  <view class="black a-minor"></view>
-  <view class="white a"></view>
-  <view class="black b-minor"></view>
-  <view class="white b"></view>
-  <view class="white c"></view>
-  <view class="black d-minor"></view>
-  <view class="white d"></view>
-  <view class="black e-minor"></view>
-  <view class="white e"></view>
-  <view class="white f"></view>
-  <view class="black f-sharp"></view>
-  <view class="white g"></view>
-  <view class="black a-minor"></view>
-  <view class="white a"></view>
-  <view class="black b-minor"></view>
-  <view class="white b"></view>
+<view class="container" bindtouchstart="touchStartHandler" bindtouchend="touchEndHandler">
+  <view class="white c {{activeNote.note1?'active-note':''}}" id="note1"></view>
+  <view class="black d-minor {{activeNote.note2?'active-note':''}}" id="note2"></view>
+  <view class="white d {{activeNote.note3?'active-note':''}}" id="note3"></view>
+  <view class="black e-minor {{activeNote.note4?'active-note':''}}" id="note4"></view>
+  <view class="white e {{activeNote.note5?'active-note':''}}" id="note5"></view>
+  <view class="white f {{activeNote.note6?'active-note':''}}" id="note6"></view>
+  <view class="black f-sharp {{activeNote.note7?'active-note':''}}" id="note7"></view>
+  <view class="white g {{activeNote.note8?'active-note':''}}" id="note8"></view>
+  <view class="black a-minor {{activeNote.note9?'active-note':''}}" id="note9"></view>
+  <view class="white a {{activeNote.note10?'active-note':''}}" id="note10"></view>
+  <view class="black b-minor {{activeNote.note11?'active-note':''}}" id="note11"></view>
+  <view class="white b {{activeNote.note12?'active-note':''}}" id="note12"></view>
+  <view class="white c {{activeNote.note13?'active-note':''}}" id="note13"></view>
+  <view class="black d-minor {{activeNote.note14?'active-note':''}}" id="note14"></view>
+  <view class="white d {{activeNote.note15?'active-note':''}}" id="note15"></view>
+  <view class="black e-minor {{activeNote.note16?'active-note':''}}" id="note16"></view>
+  <view class="white e {{activeNote.note17?'active-note':''}}" id="note17"></view>
+  <view class="white f {{activeNote.note18?'active-note':''}}" id="note18"></view>
+  <view class="black f-sharp {{activeNote.note19?'active-note':''}}" id="note19"></view>
+  <view class="white g {{activeNote.note20?'active-note':''}}" id="note20"></view>
+  <view class="black a-minor {{activeNote.note21?'active-note':''}}" id="note21"></view>
+  <view class="white a {{activeNote.note22?'active-note':''}}" id="note22"></view>
+  <view class="black b-minor {{activeNote.note23?'active-note':''}}" id="note23"></view>
+  <view class="white b {{activeNote.note24?'active-note':''}}" id="note24"></view>
+
+  <block wx:for="{{pianoNotes}}">
+     <audio id="piano{{index}}" src="{{item}}"></audio> 
+    <!-- <audio id="piano{{index}}"></audio> -->
+  </block>
 </view>
